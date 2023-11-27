@@ -55,7 +55,9 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 				System.out.println( "Criar produto" );
-				
+				System.out.println("Digite o id do produto: ");
+				id = leia.nextInt();
+
 				System.out.println("Digite o nome do produto: ");
 				leia.skip("\\R");
 				nome = leia.nextLine();
@@ -125,32 +127,25 @@ public class Menu {
 									
 					switch(tipo) {
 						case 1 -> {
-							System.out.println("Digite o estilo do sapato: ");
+							System.out.println("Digite o medicamentp genérico");
 							leia.skip("\\R?");
-							estilo = leia.nextLine();
-							produtos.atualizar(new Sapato(id, nome, tipo, preco, estilo));
+							generico = leia.nextLine();
+							produtos.atualizar(new Medicamento(id, nome, tipo, preco, generico));
 						}
 						case 2 -> {
-							System.out.println("Digite o salto da sandalia:");
+							System.out.println("Digite a fragrância do cosmético:");
 							leia.skip("\\R?");
-							salto = leia.nextLine();
-							produtos.atualizar(new Sandalia(id, nome, tipo, preco, salto));
+							fragrancia = leia.nextLine();
+							produtos.atualizar(new Cosmetico(id, nome, tipo, preco, fragrancia));
 						}
 					}
 				} else
-					System.out.println("O produto número: " + id + " não foi encontrado!");
+					System.out.println("A conta número: " + id + " não foi encontrada!");
 
 				keyPress();
 				break;
 			case 5:
 				System.out.println("Apagar produto");
-				
-				System.out.println("Digite o ID do produto: ");
-				id = leia.nextInt();
-				
-				produtos.deletar(id);
-
-				
 				keyPress();
 				break;
 			default:

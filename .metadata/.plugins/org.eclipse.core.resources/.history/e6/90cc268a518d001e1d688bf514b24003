@@ -1,0 +1,7 @@
+package loja_de_sapatos.controller;
+
+import loja_de_sapatos.repository.ProdutoRepository;
+
+public class ProdutoController implements ProdutoRepository {
+
+}

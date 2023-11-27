@@ -55,7 +55,9 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 				System.out.println( "Criar produto" );
-				
+				System.out.println("Digite o id do produto: ");
+				id = leia.nextInt();
+
 				System.out.println("Digite o nome do produto: ");
 				leia.skip("\\R");
 				nome = leia.nextLine();
