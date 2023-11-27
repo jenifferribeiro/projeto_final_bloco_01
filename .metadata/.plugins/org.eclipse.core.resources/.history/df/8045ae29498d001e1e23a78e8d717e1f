@@ -1,0 +1,29 @@
+package loja_de_sapatos;
+
+import java.util.Scanner;
+
+public class Menu {
+
+	static Scanner leia = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+while (true) {
+			
+			
+			
+			System.out.println("       LOJA DE SAPATOS DO BAIRRO                 ");
+			System.out.println("                                                 ");
+			System.out.println("     1 - Criar produto                           ");
+			System.out.println("     2 - Listar todos os produtos                ");
+			System.out.println("     3 - Buscar produto por ID                   ");
+			System.out.println("     4 - Atualizar produto                       ");
+			System.out.println("     5 - Apagar produto                          ");
+			System.out.println("     6 - Sair                                   ");
+			System.out.println("                                                 ");
+			System.out.println("*************************************************");
+			System.out.println("Entre com a opção desejada:                      ");
+			
+
+	}
+
+}
