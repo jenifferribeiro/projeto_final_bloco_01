@@ -1,0 +1,12 @@
+package loja_de_sapatos.model;
+
+public abstract class Produto {
+
+	//Definir os atributos da classe
+			private int numero;
+			private int agencia;
+			private int tipo;
+			private String titular;
+			private float saldo;
+	
+}

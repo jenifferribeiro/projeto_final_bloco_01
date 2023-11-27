@@ -1,0 +1,5 @@
+package loja_de_sapatos.model;
+
+public class Sandalia {
+
+}
